@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1646942253 source:d:\programe c++\algoritmul_lui_lee\main.cpp
+	<iostream>
+	<fstream>
+	<stack>
+	<cstring>
+

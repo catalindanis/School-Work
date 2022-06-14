@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "45e37cc6-cbf0-48a8-8b44-9bc05bc29dfd": {
+      "ProjectGuid": "45e37cc6-cbf0-48a8-8b44-9bc05bc29dfd",
+      "DisplayName": "X si O varianta finala",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

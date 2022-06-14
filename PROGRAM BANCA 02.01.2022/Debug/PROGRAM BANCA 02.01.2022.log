@@ -1,0 +1,9 @@
+﻿  PROGRAM BANCA 02.01.2022.cpp
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(90,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(102,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(211,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(281,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(364,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(706,23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\programe c++\PROGRAM BANCA 02.01.2022\PROGRAM BANCA 02.01.2022.cpp(712,31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  PROGRAM BANCA 02.01.2022.vcxproj -> D:\programe c++\PROGRAM BANCA 02.01.2022\Debug\PROGRAM BANCA 02.01.2022.exe

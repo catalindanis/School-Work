@@ -1,0 +1,3 @@
+﻿  JOC.cpp
+D:\programe c++\JOC\JOC\JOC.cpp(17,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  JOC.vcxproj -> D:\programe c++\JOC\JOC\Debug\JOC.exe

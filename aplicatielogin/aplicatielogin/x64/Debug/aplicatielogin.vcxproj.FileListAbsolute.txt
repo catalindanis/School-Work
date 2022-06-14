@@ -1,0 +1,4 @@
+D:\programe c++\aplicatielogin\aplicatielogin\x64\Debug\aplicatielogin.vcxproj.AssemblyReference.cache
+D:\programe c++\aplicatielogin\aplicatielogin\x64\Debug\aplicatielogin.vcxproj.SuggestedBindingRedirects.cache
+D:\programe c++\aplicatielogin\aplicatielogin\x64\Debug\aplicatielogin.Form1.resources
+D:\programe c++\aplicatielogin\aplicatielogin\x64\Debug\aplicatielogin.vcxproj.GenerateResource.cache
