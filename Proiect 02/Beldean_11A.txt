@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int sol[10]= {0},n;
+int valid(int k)
+{
+    int i;
+    for(i=1; i<k; i++)
+    {
+        if((abs(sol[i]-sol[k])==abs(i-k))||(sol[i]==sol[k]))
+            return 0;
+    }
+    return 1;
+}
+int solutie(int k)
+{
+    if(k==n)
+        return 1;
+    return 0;
+}
+void afisare(int k)
+{
+    int i,j=1;
+    cout<<"damele se afla pe liniile si coloanele: ";
+    cout<<endl;
+    for(i=1; i<=k; i++)
+    {
+
+        cout<<"["<<j<<"]"<<"["<<sol[i]<<"]"<<' ';
+        j++;
+    }
+    cout<<endl;
+}
+void backt(int k)
+{
+    int i;
+    for(i=1; i<=n; i++)
+    {
+        sol[k]=i;
+        if(valid(k))
+        {
+            if(solutie(k))
+                afisare(k);
+            else
+                backt(k+1);
+        }
+    }
+
+
+}
+int main()
+{
+    cin>>n;
+    backt(1);
+    return 0;
+}

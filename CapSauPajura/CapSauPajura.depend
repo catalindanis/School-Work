@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1669666711 source:d:\users\11a danis catalin\capsaupajura\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstring>
+
+1669667770 source:d:\users\11a danis catalin\clasa a 11-a\proiecte\capsaupajura\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstring>
+

@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int sol[10] ,n;
+
+void Afisare()
+{
+    for(int i=1;i<=n;i++)
+        cout<<i<<" "<<sol[i]<<endl;
+    cout<<endl;
+}
+
+int Verif(int j){
+
+    for(int i=1;i<j;i++)
+    {
+        if(sol[i]==sol[j])
+            return 0;
+        if(j-i==abs(sol[j]-sol[i]))
+            return 0;
+    }
+    return 1;
+}
+
+
+void Back(int k){
+    for(int i = 1 ; i <= n ; ++i)
+    {
+        sol[k]=i;
+        if( Verif(k)==1 )
+        {
+            if(k==n)
+                Afisare();
+            else
+                Back(k+1);
+        }
+
+    }
+}
+int main()
+{
+    cout<<"Introdu n: ";
+    while(!(cin>>n) || cin.fail())
+    {
+        cout<<"Alege alta valoare"<<endl;
+        cin.clear();
+        cin.ignore(200,'\n');
+    }
+        if(n>8) cout<<"Tabla e prea mare";
+            else
+                if(n<=3) cout<<"Tabla e prea mica";
+                else
+                    {
+                        cout<<"Pozitiile pe care pot fi asezate damele sunt: "<<endl;
+                        Back(1);
+                    }
+    return 0;
+}

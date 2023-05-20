@@ -1,0 +1,69 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int n,sol[100];
+ 
+int condi?ie(int l)
+{
+    if(l>1)///verific daca linia pe care incerc sa a?ez dama este alta decat linia 1
+    {
+        for(int c=1; c<i; c++)
+        {
+            if(sol[c]==sol[l])///verigic daca pe coloana unde am asezat dama de pe linia l mai este o dama asezata anterior(pe una din liniile de la 1...l-1)
+                return 0;
+            if(abs(l-c)==abs(sol[l]-sol[c]))
+                return 0;
+        }
+ 
+    }
+    return 1;
+}
+ 
+void afisare()
+{
+    for(int l=1; l<=n; l++)
+        cout<<sol[l]<<" ";
+    cout<<endl;
+}
+ 
+void afisare2()
+{
+    for(int l=1; l<=n; l++) ///sol: 3142
+    {
+        for(int c=1; c<=n; c++)
+            if(c==sol[l])
+                cout<<'D';
+            else
+                cout<<'-';
+        cout<<endl;
+    }
+ 
+    cout<<endl;
+    cout<<endl;
+}
+ 
+void backtracking()
+{
+    int l=1;
+    sol[l]=0;
+    while(l>0)
+        if(sol[l]<n)
+        {
+            sol[l]++;
+            if(cond(l)==1)
+                if(l==n)
+                    afisare2();
+                else
+                    sol[++l]=0;
+        }
+        else
+           l--;
+ 
+}
+ 
+int main()
+{
+    cin>>n;
+    backtracking();
+    return 0;
+}

@@ -1,0 +1,80 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int n,dame[10],sol=1,solutii=0;
+
+void afisare()
+{
+    solutii++;
+    cout<<"Solutia: "<<sol<<endl;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=n;j++)
+        {
+            if(dame[j]==i)
+                cout<<"1";
+            else
+                cout<<"0";
+        }
+        cout<<endl;
+    }
+    cout<<endl<<endl;
+    sol++;
+}
+
+bool solutie(int k)
+{
+    if(k==n)
+        return true;
+    else
+        return false;
+}
+
+bool verif(int k)
+{
+    for(int i=1;i<k;i++)
+        if(dame[k]==dame[i] || abs(dame[k]-dame[i])==k-i)
+            return false;
+        return true;
+}
+
+void backndame(int col)
+{
+    for(int i=1;i<=n;i++)
+    {
+        dame[col]=i;
+        if(verif(col))
+            if(solutie(col))
+                afisare();
+            else
+                backndame(col+1);
+    }
+}
+int main()
+{
+    cout<<"Nr de linii si coloane: ";
+    while(!(cin>>n) || cin.fail())
+    {
+        cout<<"Introdu altceva: ";
+        cin.clear();
+        cin.ignore(200,'\n');
+    }
+    if(n<4 || n>9)
+    {
+        if(n<4)
+        {
+            cout<<"Tabla prea mica";
+            return 0;
+        }
+        if(n>8)
+        {
+            cout<<"Tabra prea mare";
+            return 0;
+        }
+    }
+    backndame(1);
+    cout<<"Nr solutiilor: "<<solutii;
+    return 0;
+}

@@ -1,0 +1,62 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int x[10],n,a[10][10];
+void afisare()
+{
+    for(int j=1;j<=n;j++)
+        cout<<x[j]<<" ";
+    cout<<"\n";
+    for(int i=1;i<=n;i++)
+    {
+        for(int k=1;k<=n;k++)
+        {
+            if(k==x[i])
+                cout<<"X"<<" ";
+            else
+                cout<<"O"<<" ";
+        }
+        cout<<"\n";
+    }
+    cout<<"\n";
+}
+bool ok(int k)
+{
+    for(int i=1;i<k;i++)
+    {
+        if((x[k]==x[i]) || ((k-i)==abs(x[k]-x[i])))
+            return false;
+    }
+    return true;
+}
+void back(int k)
+{
+    for(int i=1;i<=n;i++)
+    {
+        x[k]=i;
+        if(ok(k))
+            if(k==n)
+                afisare();
+            else
+                back(k+1);
+    }
+}
+int main()
+{
+    while(true)
+    {
+        cout<<"Introduceti numarul de regine; acesta nu poate fi mai mic decat 4 sau mai mare decat 8!\n";
+        cin>>n;
+        if ((cin.fail()&&!cin)||(n>8 || n<4))
+        {
+            cin.clear();
+            cin.ignore(200, '\n');
+            cout << "Numarul de regine introdus nu respecta conditia!" << "\n";
+        }
+        else
+            break;
+    }
+    back(1);
+    return 0;
+}

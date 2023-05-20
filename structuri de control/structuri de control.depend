@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1668602251 source:d:\users\11a danis catalin\structuri de control\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+

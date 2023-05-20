@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+void print(int *x, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+            if (x[i] == j)
+                cout<<'x';
+            else
+                cout<<'o';
+        cout<<endl;
+    }
+    cout<<endl;
+}
+ 
+int main()
+{
+    int n, k, Sol;
+    int *x;
+    int solutii = 0;
+    cout<<"Numarul de dame (dimensiunea tablei): ";
+    cin>>n;
+    x = new int[n];
+    k = 0;
+    x[k] = -1;
+    while (k >= 0)
+    {
+        Sol = 0;
+        while ((x[k] < n - 1) && (! Sol))
+        {
+            Sol = 1;
+            x[k]++;
+            for (int i = 0; (i < k) && Sol; i++)
+                if ((x[k] == x[i]) || (k - i == abs((float)x[k] - x[i])))
+                    Sol = 0;
+        }
+        if (! Sol)
+            k--;
+        else
+            if (k == n - 1)
+            {
+                solutii++;
+                print(x, n);
+            }
+            else
+            {
+                k++;
+                x[k] = -1;
+            }
+    }
+    delete x;
+    cout<<"Exista "<<solutii<<" solutii."<<endl;
+ 
+}

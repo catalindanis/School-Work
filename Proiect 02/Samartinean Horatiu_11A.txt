@@ -1,0 +1,55 @@
+#include <iostream>
+int x[100][100]={0},i,j,n;
+using namespace std;
+
+int ok(int x[100][100],int i,int j){
+    int a,b;
+    for (a=0;a<j;a++)
+        if (x[i][a])
+            return 0;
+    for (a=i,b=j;a>=0&&b>=0;a--,b--)
+        if (x[a][b]==1)
+            return 0;
+    for (a=i,b=j;b>=0&&a<n;a++,b--)
+        if (x[a][b]==1)
+            return 0;
+    return 1;
+}
+int sol(int x[100][100],int j){
+    if (j>=n)
+        return 1;
+
+    for(int i=0;i<n;i++) {
+        if(ok(x,i,j))
+            {
+            x[i][j]=1;
+            if(sol(x,j + 1))
+                return 1;
+            x[i][j] = 0;
+        }
+    }
+    return 0;
+}
+void afis(int x[100][100])
+{
+     for (int i=0;i<n;i++)
+        {
+        for (int j=0;j<n;j++)
+            cout<<" "<<x[i][j]<<" ";
+        cout<<endl;
+    }
+}
+void Back(){
+        if(sol(x,0) == false) {
+        cout<<"NU EXISTA";
+    }
+
+    afis(x);
+
+}
+int main()
+{
+    cin>>n;
+    Back();
+    return 0;
+}

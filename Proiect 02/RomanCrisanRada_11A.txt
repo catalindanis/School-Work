@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int n, x[10];
+void afisare(int a)
+{
+    for(int i=1;i<=a;i++)
+    {
+        cout<<"Linia "<<i<<" "<<"coloana "<<x[i]<<endl;
+    }
+    cout<<endl;
+}
+int valid(int a)
+{
+    for(int i=1;i<a;i++)
+    {
+        if(x[i]==x[a])
+            return 0;
+    }
+    return 1;
+}
+void backtracking(int a)
+{
+    for(int i=1;i<=n;i++)
+    {
+        if(valid(a)==1)
+        {
+            if(a==n)
+                afisare(a);
+            else backtracking (a+1);
+        }
+    }
+}
+int main()
+{
+    cin>>n;
+    if(n<=3)
+        cout<<"dimensiunea este prea mica";
+    else
+    {
+        if(n>8)
+            cout<<"dimensiunea este prea mare";
+        else backtracking(1)
+
+    return 0;
+}
