@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1668362759 source:d:\code\pbinfo\c++\structuri_de_control\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+

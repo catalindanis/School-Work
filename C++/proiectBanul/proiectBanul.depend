@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1669575721 source:d:\code\pbinfo\c++\proiectbanul\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstring>
+

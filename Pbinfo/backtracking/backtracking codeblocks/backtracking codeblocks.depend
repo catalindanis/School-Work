@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1688121043 source:d:\code\info\pbinfo\backtracking\backtracking codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1674351053 source:d:\code\info\c++\proiect5\main.cpp
+	<iostream>
+	"implementari/lista_muchii.cpp"
+
+1674343454 source:d:\code\info\c++\proiect5\matrice_adiacenta.cpp
+	<iostream>
+	<fstream>
+
+1674343040 source:d:\code\info\c++\proiect5\lista_muchii.cpp
+
+1674343401 source:d:\code\info\c++\proiect5\matrice_incidenta.cpp
+
+1674343454 d:\code\info\c++\proiect5\matrice_adiacenta.cpp
+	<iostream>
+	<fstream>
+
+1674346420 source:d:\code\info\c++\proiect5\implementari\matrice_incidenta.cpp
+	<iostream>
+	<fstream>
+
+1674350858 source:d:\code\info\c++\proiect5\implementari\lista_muchii.cpp
+	<iostream>
+	<fstream>
+
+1674351050 d:\code\info\c++\proiect5\implementari\lista_muchii.cpp
+	<iostream>
+	<fstream>
+
