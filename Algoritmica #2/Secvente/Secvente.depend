@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1679742389 source:/home/student/Danis Catalin/Secvente/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<queue>
+	<cmath>
+
+1679941633 source:d:\code\itec liga ac\algoritmica #2\secvente\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<queue>
+	<cmath>
+

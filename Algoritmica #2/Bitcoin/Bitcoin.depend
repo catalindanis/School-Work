@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1679742410 source:/home/student/Danis Catalin/Bitcoin/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<queue>
+	<cmath>
+
+1679941120 source:d:\code\itec liga ac\algoritmica #2\bitcoin\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<queue>
+	<cmath>
+

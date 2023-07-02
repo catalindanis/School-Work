@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1679742363 source:/home/student/Danis Catalin/Triunghiuri/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<queue>
+	<cmath>
+
